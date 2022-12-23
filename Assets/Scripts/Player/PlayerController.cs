@@ -25,6 +25,14 @@ public class PlayerController : MonoBehaviour
     [Header("Components")]
     public Rigidbody rb;
 
+    [Header("Water")]
+    private bool underWater;
+    [SerializeField]
+    private float gravityForce = 9.807f;
+    [SerializeField]
+    private Vector3 moveDirection;
+    public UnderWater underWaterScript;
+
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -116,5 +124,28 @@ public class PlayerController : MonoBehaviour
         Gizmos.DrawRay(transform.position + (-transform.forward * 0.2f), Vector3.down);
         Gizmos.DrawRay(transform.position + (transform.right * 0.2f), Vector3.down);
         Gizmos.DrawRay(transform.position + (-transform.right * 0.2f), Vector3.down);
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Water"))
+        {
+            underWater = true;
+
+            if (Input.GetKey(KeyCode.Space))
+            {
+                moveDirection.y += (gravityForce + jumpForce) * 20 * Time.deltaTime;
+            }
+            underWaterScript.underWater = true;
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Water"))
+        {
+            underWater = false;
+            underWaterScript.underWater = false;
+        }
     }
 }
