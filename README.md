@@ -16,4 +16,4 @@ Data: The player can build things (campfire, grill, bed, wall, roof and more), e
 It is a first person 3D survival game
 
 # UNITY Version
-UNITY 2021.1.0f1 Personal(Personal)
+UNITY 2022.2.1f1 Personal(Personal)
