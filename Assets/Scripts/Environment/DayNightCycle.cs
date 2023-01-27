@@ -48,7 +48,27 @@ public class DayNightCycle : MonoBehaviour
         sun.color = sunColor.Evaluate(time);
         moon.color = moonColor.Evaluate(time);
 
-        // enable
+        // enable / disable the sun
+        if(sun.intensity == 0 && sun.gameObject.activeInHierarchy)
+        {
+            sun.gameObject.SetActive(false);
+        }
+        else if (sun.intensity > 0 && !sun.gameObject.activeInHierarchy){
+            sun.gameObject.SetActive(true);
+        }
+        // enable / disable the moon
+        if (moon.intensity == 0 && moon.gameObject.activeInHierarchy)
+        {
+            moon.gameObject.SetActive(false);
+        }
+        else if (moon.intensity > 0 && !moon.gameObject.activeInHierarchy)
+        {
+            moon.gameObject.SetActive(true);
+        }
+
+        // lighting and reflections intensity
+        RenderSettings.ambientIntensity = lightingIntensityMultiplier.Evaluate(time);
+        RenderSettings.reflectionIntensity = reflectionsIntensityMultiplier.Evaluate(time);
     }
 
     void IncrementTime()
