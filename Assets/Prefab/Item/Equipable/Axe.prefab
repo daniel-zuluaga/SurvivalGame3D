@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1810362172205141012}
   - component: {fileID: 6775008816608550532}
   - component: {fileID: 7816802619077986854}
+  - component: {fileID: 2049929416979177252}
   m_Layer: 0
   m_Name: Axe
   m_TagString: Untagged
@@ -104,6 +105,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.04039538, y: 0.30950183, z: 0.37834322}
   m_Center: {x: -0.004172206, y: 0.4578983, z: 0.23990113}
+--- !u!114 &2049929416979177252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324723024499587355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 450684c6c997643709f49378dba4381b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemData: {fileID: 11400000, guid: e5ada410cbe9944d387184889c92d257, type: 2}
 --- !u!1 &5502865085384214926
 GameObject:
   m_ObjectHideFlags: 0

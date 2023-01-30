@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 3594407377440393698}
   - component: {fileID: 8694680650079636221}
   - component: {fileID: 2384943226903521058}
+  - component: {fileID: -4481181047265187918}
   m_Layer: 0
   m_Name: Mango
   m_TagString: Untagged
@@ -142,12 +143,12 @@ Transform:
   m_GameObject: {fileID: 3507956828802085791}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2387139628512200593}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &8694680650079636221
 Rigidbody:
@@ -199,3 +200,16 @@ CapsuleCollider:
   m_Height: 0.86031157
   m_Direction: 1
   m_Center: {x: 0, y: 0.009524196, z: -0.003174752}
+--- !u!114 &-4481181047265187918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3507956828802085791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 450684c6c997643709f49378dba4381b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemData: {fileID: 11400000, guid: ce34cc08bd7ca4cebafe11c73a76fe86, type: 2}
