@@ -782,7 +782,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -1195,6 +1195,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 37dfcec4f8c154fd6bf179ca1a84c30e, type: 3}
       propertyPath: m_Name
       value: Terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 37dfcec4f8c154fd6bf179ca1a84c30e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1364076815127437966, guid: 37dfcec4f8c154fd6bf179ca1a84c30e, type: 3}
       propertyPath: m_Layer
@@ -1887,8 +1891,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
-  fullDayLenght: 200
-  startTime: 0.4
+  fullDayLenght: 1800
+  startTime: 0.2
   noon: {x: 90, y: 0, z: 0}
   sun: {fileID: 705507994}
   sunColor:
@@ -2462,14 +2466,14 @@ MonoBehaviour:
     maxValue: 250
     startValue: 250
     regenRate: 0
-    decayRate: 1
+    decayRate: 0.5
     uiBar: {fileID: 1076753419}
   thirst:
     curValue: 0
     maxValue: 250
     startValue: 250
     regenRate: 0
-    decayRate: 2
+    decayRate: 0.7
     uiBar: {fileID: 1107319663}
   sleep:
     curValue: 0
@@ -2478,9 +2482,9 @@ MonoBehaviour:
     regenRate: 0.65
     decayRate: 0.7
     uiBar: {fileID: 271784962}
-  noHungerHealthDecay: 1
-  noThirstHealthDecay: 2
-  noSleepHungerThirstDecay: 0.25
+  noHungerHealthDecay: 0.5
+  noThirstHealthDecay: 0.7
+  noSleepHungerThirstDecay: 0.4
   onTakeDamage:
     m_PersistentCalls:
       m_Calls:
