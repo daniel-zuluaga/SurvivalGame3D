@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2387139628512200593}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MangoPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 1920919308320259647}
   - component: {fileID: 4250606124886240696}
   - component: {fileID: 6117274050227258536}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mango2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 8694680650079636221}
   - component: {fileID: 2384943226903521058}
   - component: {fileID: -4481181047265187918}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mango
   m_TagString: Untagged
   m_Icon: {fileID: 0}

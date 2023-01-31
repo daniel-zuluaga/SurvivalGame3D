@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6462259750150659353}
   - component: {fileID: 6462259750150659352}
   - component: {fileID: 704607335895945548}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Banana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 6462259750802505754}
   - component: {fileID: 6157415161728527490}
   - component: {fileID: 8648710830893481419}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BananaPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}

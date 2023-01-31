@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 961341917748249307}
   - component: {fileID: 961341917748249306}
   - component: {fileID: -7808137777170342564}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Watermelon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 2438021003770350059}
   - component: {fileID: 1619691381140440654}
   - component: {fileID: 3575501807078847108}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WatermelonPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}

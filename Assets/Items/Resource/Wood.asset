@@ -16,6 +16,6 @@ MonoBehaviour:
   descriptionItem: This item helps build items needed by this item
   typeItem: 0
   iconItem: {fileID: 21300000, guid: 384725006f1db4c239dfd54a2d99a321, type: 3}
-  prefabItem: {fileID: 5721644968662106113, guid: b9fdc16acd46a42bda3eb2fd1e40ca17, type: 3}
+  prefabItem: {fileID: 8521308887790419681, guid: 484a1d042891f4e41a443aa290465ab4, type: 3}
   canStack: 1
   maxStackAmount: 32

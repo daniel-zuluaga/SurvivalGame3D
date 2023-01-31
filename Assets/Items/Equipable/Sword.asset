@@ -16,6 +16,6 @@ MonoBehaviour:
   descriptionItem: 
   typeItem: 1
   iconItem: {fileID: 21300000, guid: affd0b06753ec422b99f423e32130810, type: 3}
-  prefabItem: {fileID: 724857217932793196, guid: 9ad63a7de69f54394bbcf8dd5bf68b31, type: 3}
+  prefabItem: {fileID: 4476167663468964487, guid: 9ff1d33a762b24bc68f691ec879c5b55, type: 3}
   canStack: 0
   maxStackAmount: 0

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1399122557873262916}
   - component: {fileID: 6908600526849898799}
   - component: {fileID: -2914647472378183075}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BuildingKit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 7890097679464587528}
   - component: {fileID: 7857892794831608225}
   - component: {fileID: 4067446746368723428}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BuildingKitPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
