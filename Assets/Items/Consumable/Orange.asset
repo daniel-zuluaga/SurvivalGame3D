@@ -16,6 +16,6 @@ MonoBehaviour:
   descriptionItem: 'This is a food can you eat '
   typeItem: 2
   iconItem: {fileID: 21300000, guid: 051e58349a3434fd9b920586329ce2f3, type: 3}
-  prefabItem: {fileID: 2731084122863449253, guid: 74dd61e11ecc943128696a9d2ee94269, type: 3}
+  prefabItem: {fileID: 4076627763220389813, guid: 06d5266b38f9246349ab1a608370199b, type: 3}
   canStack: 0
   maxStackAmount: 0

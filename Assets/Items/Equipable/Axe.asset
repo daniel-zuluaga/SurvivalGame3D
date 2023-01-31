@@ -16,6 +16,6 @@ MonoBehaviour:
   descriptionItem: This object can be equipped and is used to destroy objects
   typeItem: 1
   iconItem: {fileID: 21300000, guid: 8f09d68990622444ca49ae5eb6b97d27, type: 3}
-  prefabItem: {fileID: 2705417762326684899, guid: a8d6f71418ed14a268818a1e22ccb2d7, type: 3}
+  prefabItem: {fileID: 1324723024499587355, guid: 9fd6d2d7b7c39423fb79b31fd9f60271, type: 3}
   canStack: 0
   maxStackAmount: 0

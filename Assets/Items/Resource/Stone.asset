@@ -16,6 +16,6 @@ MonoBehaviour:
   descriptionItem: This object helps to build tools like (house, and much more)
   typeItem: 0
   iconItem: {fileID: 21300000, guid: 9068c38a92eb643d58bc09674ee62a80, type: 3}
-  prefabItem: {fileID: 2206642982125967538, guid: cf30fe358a419491e903e4baa2ecf5ff, type: 3}
+  prefabItem: {fileID: 212493478791295337, guid: c635a7c1f69464d22929a4a3f9a2c63a, type: 3}
   canStack: 1
   maxStackAmount: 32

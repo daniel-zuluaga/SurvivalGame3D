@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1381815262796286251}
   - component: {fileID: 8550951205696164546}
   - component: {fileID: 7596738542839767971}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WoodPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 1615057617177240834}
   - component: {fileID: 5486365904860922074}
   - component: {fileID: 6784889117816904168}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wood
   m_TagString: Untagged
   m_Icon: {fileID: 0}

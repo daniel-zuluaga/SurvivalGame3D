@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5991979694375121404}
   - component: {fileID: 5991979694375121407}
   - component: {fileID: 5991979694375121406}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Iron
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 5991979696395293247}
   - component: {fileID: 5991979696395293246}
   - component: {fileID: 5991979696395293233}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Iron
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 450684c6c997643709f49378dba4381b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 0}
+  itemData: {fileID: 11400000, guid: 0dae45f0df5be405c8d756eeba1ff1f9, type: 2}
 --- !u!65 &5991979696395293246
 BoxCollider:
   m_ObjectHideFlags: 0

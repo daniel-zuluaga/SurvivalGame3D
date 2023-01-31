@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6775008816608550532}
   - component: {fileID: 7816802619077986854}
   - component: {fileID: 2049929416979177252}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Axe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 2512310061749362111}
   - component: {fileID: 3791851295729041355}
   - component: {fileID: 2095487193988690257}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 4217627174483403706}
   - component: {fileID: 4416177454988302777}
   - component: {fileID: 7852973171557999956}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,7 +294,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8749799492956430437}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AxePrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
