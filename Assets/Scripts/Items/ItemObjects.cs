@@ -13,6 +13,7 @@ public class ItemObjects : MonoBehaviour, IInteractable
 
     public void OnInteract()
     {
+        Inventory.instance.AddItem(itemData);
         Destroy(gameObject);
     }
 }
