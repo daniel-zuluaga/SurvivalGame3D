@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BuildingKit
   m_EditorClassIdentifier: 
   nameItem: BuildingKit
-  descriptionItem: 
+  descriptionItem: This object helps display a template for the build.
   typeItem: 0
   iconItem: {fileID: 21300000, guid: f250ffd64543548dc89deb348b9f05e6, type: 3}
   prefabItem: {fileID: 2679144568588272150, guid: 24d4c462c9f074edea2f68647b9bfc42, type: 3}

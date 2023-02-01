@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Sword
   m_EditorClassIdentifier: 
   nameItem: Sword
-  descriptionItem: 
+  descriptionItem: This sword helps defend against enemies
   typeItem: 1
   iconItem: {fileID: 21300000, guid: affd0b06753ec422b99f423e32130810, type: 3}
   prefabItem: {fileID: 4476167663468964487, guid: 9ff1d33a762b24bc68f691ec879c5b55, type: 3}
