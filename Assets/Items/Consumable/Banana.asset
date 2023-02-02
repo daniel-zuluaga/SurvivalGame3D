@@ -19,3 +19,8 @@ MonoBehaviour:
   prefabItem: {fileID: 6462259750150659355, guid: 2c16e7e57f01e4a2e8aad715700e4891, type: 3}
   canStack: 1
   maxStackAmount: 18
+  consumables:
+  - type: 0
+    value: 20
+  - type: 1
+    value: 12
