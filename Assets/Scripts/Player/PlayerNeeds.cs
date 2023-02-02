@@ -89,7 +89,6 @@ public class PlayerNeeds : MonoBehaviour, IDamagable
 [System.Serializable]
 public class Need
 {
-    [HideInInspector]
     public float curValue;
     public float maxValue;
     public float startValue;
