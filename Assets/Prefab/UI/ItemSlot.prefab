@@ -96,6 +96,7 @@ MonoBehaviour:
   button: {fileID: 5845476208071878908}
   icon: {fileID: 7099249681643911085}
   quantityText: {fileID: 7099249681989079371}
+  outline: {fileID: 0}
   index: 0
   equipped: 0
 --- !u!114 &5845476208071878908
@@ -161,7 +162,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7099249680327587065}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
   m_Name: 
