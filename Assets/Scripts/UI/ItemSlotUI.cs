@@ -10,17 +10,18 @@ public class ItemSlotUI : MonoBehaviour
     public Image icon;
     public TextMeshProUGUI quantityText;
     private ItemSlot curSlot;
-    private Outline outline;
+    public Outline outline;
+    public GameObject selectedItemData;
 
     public int index;
     public bool equipped;
 
-    private void Awake()
+    void Awake()
     {
         outline = GetComponent<Outline>();
     }
 
-    private void OnEnable()
+    void OnEnable()
     {
         outline.enabled = equipped;
     }
