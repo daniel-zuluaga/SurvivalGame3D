@@ -149,6 +149,7 @@ public class Inventory : MonoBehaviour
 
         return null;
     }
+
     ItemSlot GetEmptySlot()
     {
         for (int x = 0; x < slots.Length; x++)
