@@ -51,6 +51,7 @@ MonoBehaviour:
   doesGatherResources: 0
   doesDealDamage: 0
   damage: 0
+  hitItem: 10
   anim: {fileID: 5997108379026479196}
   cam: {fileID: 0}
 --- !u!95 &5997108379026479196
