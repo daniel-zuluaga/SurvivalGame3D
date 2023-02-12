@@ -46,14 +46,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdfdf72270fc741e48ee187a7569900a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRate: 0
-  attackDistance: 0
-  doesGatherResources: 0
+  attackRate: 0.8
+  attackDistance: 1.2
+  healthWeapon: 100
+  healthWeaponMax: 100
+  doesGatherResources: 1
   doesDealDamage: 0
-  damage: 0
-  hitItem: 10
+  damage: 8
+  hitItem: 1
   anim: {fileID: 5997108379026479196}
   cam: {fileID: 0}
+  itemSlotUI: {fileID: 6843961481803960198, guid: a21d907d2d8324f619c9f4b31c561c79, type: 3}
 --- !u!95 &5997108379026479196
 Animator:
   serializedVersion: 5

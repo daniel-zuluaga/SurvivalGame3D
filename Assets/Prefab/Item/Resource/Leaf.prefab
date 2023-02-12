@@ -32,7 +32,7 @@ Transform:
   m_Children:
   - {fileID: 4453047981843483675}
   m_Father: {fileID: 8166768565870533149}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: -90}
 --- !u!33 &3881310339466103171
 MeshFilter:
@@ -115,7 +115,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 176472328297940518}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 3.338, y: -90, z: -179.067}
 --- !u!33 &3965088925654590447
 MeshFilter:
@@ -200,7 +200,7 @@ Transform:
   m_Children:
   - {fileID: 176472328297940518}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &430179357763176795
 BoxCollider:
@@ -210,19 +210,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5240357025011426421}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 2.267802, y: 0.16791534, z: 0.88517123}
-  m_Center: {x: 1.0952502, y: 0.015758514, z: -0.0054164827}
+  serializedVersion: 2
+  m_Size: {x: 2.0895224, y: 0.24114192, z: 0.8783331}
+  m_Center: {x: 1.1400113, y: -0.010571718, z: -0.01858145}
 --- !u!54 &430179357763176794
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -230,21 +222,10 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5240357025011426421}
-  serializedVersion: 4
+  serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0

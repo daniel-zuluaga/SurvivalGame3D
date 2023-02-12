@@ -9,7 +9,7 @@ public class EquipTool : Equip
     private bool attacking;
     public float attackDistance;
     public float healthWeapon;
-    public int healthWeaponMax;
+    public float healthWeaponMax;
 
     [Header("Resource Gathering")]
     public bool doesGatherResources;
@@ -22,21 +22,27 @@ public class EquipTool : Equip
     [Header("Componets")]
     public Animator anim;
     public Camera cam;
-    public Image fillAmountHealth;
+    public ItemSlotUI itemSlotUI;
 
     private void Awake()
     {
         cam = Camera.main;
     }
 
-    private void Start()
+    void Start()
     {
         healthWeapon = healthWeaponMax;
     }
 
-    private void Update()
+    void Update()
     {
-        fillAmountHealth.fillAmount = healthWeapon / healthWeaponMax;
+        UpdateHealthBar();
+    }
+
+    public void UpdateHealthBar()
+    {
+        itemSlotUI.fillHealthItem.fillAmount = healthWeapon / healthWeaponMax;
+        Inventory.instance.UpdateUI();
     }
 
     public override void OnAttackInput()
@@ -51,17 +57,29 @@ public class EquipTool : Equip
 
     void OnCanAttack()
     {
-        attacking = true;
+        attacking = false;
     }
 
     public void OnHit()
     {
-        Debug.Log("Hit Detected");
-        healthWeapon -= hitItem;
+        if (this == null)
+        {
+            Debug.Log("Este objeto es nulo");
+            return;
+        }
 
-        if(healthWeapon == 0)
+        if (healthWeapon == 0)
         {
             Destroy(gameObject);
+            Inventory.instance.RemoveSelectedItem();
+            itemSlotUI.Clear();
+            return;
+        }
+        else
+        {
+            healthWeapon -= hitItem;
+            UpdateHealthBar();
+            Debug.Log("Hit Detected");
         }
     }
 }
