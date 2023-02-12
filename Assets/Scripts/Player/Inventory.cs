@@ -128,7 +128,7 @@ public class Inventory : MonoBehaviour
         Instantiate(item.prefabItem, dropPosition.position, Quaternion.Euler(Vector3.one * Random.value * 360f));
     }
 
-    void UpdateUI()
+    public void UpdateUI()
     {
         for (int i = 0; i < slots.Length; i++)
         {
@@ -191,7 +191,7 @@ public class Inventory : MonoBehaviour
 
     }
 
-    void ClearSelectedItemWindow()
+    public void ClearSelectedItemWindow()
     {
         // clear the text elements
         selectedItem = null;
@@ -232,7 +232,7 @@ public class Inventory : MonoBehaviour
             }
         }
 
-        RemoveSlectedItem();
+        RemoveSelectedItem();
     }
 
     public void OnEquipButton()
@@ -267,10 +267,10 @@ public class Inventory : MonoBehaviour
     public void OnDropButton()
     {
         ThrowItem(selectedItem.item);
-        RemoveSlectedItem();
+        RemoveSelectedItem();
     }
 
-    void RemoveSlectedItem()
+    public void RemoveSelectedItem()
     {
         selectedItem.quantity--;
         if(selectedItem.quantity == 0)

@@ -12,7 +12,8 @@ public class ItemSlotUI : MonoBehaviour
     private ItemSlot curSlot;
     public Outline outline;
     public GameObject selectedItemData;
-    public GameObject fillHealthItem;
+    public GameObject ImgBGItem;
+    public Image fillHealthItem;
 
     public int index;
     public bool equipped;
@@ -34,11 +35,11 @@ public class ItemSlotUI : MonoBehaviour
 
         if(curSlot.item.typeItem == ItemType.Equipable)
         {
-            fillHealthItem.SetActive(true);
+            ImgBGItem.SetActive(true);
         }
         else
         {
-            fillHealthItem.SetActive(false);
+            ImgBGItem.SetActive(false);
         }
 
         icon.sprite = slot.item.iconItem;
@@ -53,7 +54,7 @@ public class ItemSlotUI : MonoBehaviour
     public void Clear()
     {
         curSlot = null;
-        fillHealthItem.SetActive(false);
+        ImgBGItem.SetActive(false);
 
         icon.gameObject.SetActive(false);
         quantityText.text = string.Empty;
