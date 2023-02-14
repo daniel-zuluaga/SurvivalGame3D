@@ -32,6 +32,7 @@ public class Inventory : MonoBehaviour
     // components
     public PlayerController controller;
     public PlayerNeeds needs;
+    public EquipTool[] equipTools;
 
     [Header("Events")]
     public UnityEvent onOpenInventory;
@@ -200,6 +201,10 @@ public class Inventory : MonoBehaviour
         selectedItemStatNames.text = string.Empty;
         selectedItemStatValues.text = string.Empty;
         iconItem.gameObject.SetActive(false);
+        for (int i = 0; i < uiSlots.Length; i++)
+        {
+            uiSlots[i].DesactiveBarHealth();
+        }
 
         // disable buttons
         useButton.SetActive(false);
@@ -268,6 +273,14 @@ public class Inventory : MonoBehaviour
     {
         ThrowItem(selectedItem.item);
         RemoveSelectedItem();
+    }
+
+    public void UpdateHealthBarWeapon()
+    {
+        for (int x = 0; x < uiSlots.Length; x++)
+        {
+            uiSlots[x].fillHealthItem.fillAmount = equipTools[x].healthWeapon / equipTools[x].healthWeaponMax;
+        }
     }
 
     public void RemoveSelectedItem()

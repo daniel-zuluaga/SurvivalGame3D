@@ -34,17 +34,6 @@ public class EquipTool : Equip
         healthWeapon = healthWeaponMax;
     }
 
-    void Update()
-    {
-        UpdateHealthBar();
-    }
-
-    public void UpdateHealthBar()
-    {
-        itemSlotUI.fillHealthItem.fillAmount = healthWeapon / healthWeaponMax;
-        Inventory.instance.UpdateUI();
-    }
-
     public override void OnAttackInput()
     {
         if (!attacking)
@@ -78,7 +67,6 @@ public class EquipTool : Equip
         else
         {
             healthWeapon -= hitItem;
-            UpdateHealthBar();
             Debug.Log("Hit Detected");
         }
     }
