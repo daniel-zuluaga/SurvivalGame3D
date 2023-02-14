@@ -4,6 +4,7 @@
 It is a survival where the player has to survive on an island with food 🥗 🥙 , materials (wood, weapon and more), and with these materials you can create beds, campfire, roof, wall, grill and many more. But it has the most important weapons such as: ax, sword and more
 
 # Video of the game
+https://youtu.be/PZ88jTXE6PU
 
 <img width="832" alt="Screenshot 2023-02-14 at 2 53 45 PM" src="https://user-images.githubusercontent.com/70453255/218847798-b7ef7c4c-099d-4fd0-b760-1d6043a3c88a.png">
 
