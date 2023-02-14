@@ -5,6 +5,14 @@ It is a survival where the player has to survive on an island with food 🥗 �
 
 # Video of the game
 
+<img width="832" alt="Screenshot 2023-02-14 at 2 53 45 PM" src="https://user-images.githubusercontent.com/70453255/218847798-b7ef7c4c-099d-4fd0-b760-1d6043a3c88a.png">
+
+<img width="829" alt="Screenshot 2023-02-14 at 2 54 04 PM" src="https://user-images.githubusercontent.com/70453255/218847795-cde8af57-781f-44d4-a088-dcbf25a872e4.png">
+
+<img width="826" alt="Screenshot 2023-02-14 at 2 54 58 PM" src="https://user-images.githubusercontent.com/70453255/218847792-ec58c74b-8e85-496b-b7c5-157a426954da.png">
+
+<img width="830" alt="Screenshot 2023-02-14 at 2 55 26 PM" src="https://user-images.githubusercontent.com/70453255/218847788-5781a34c-2493-4270-af76-c9aa96389636.png">
+
 # What did I do
 I made this game because I would like to know how to create a survival game where you have to equip yourself, this game I will learn many things like: drop things, catch them, particles, build them, and much more, this game is not finished by the moment
 
