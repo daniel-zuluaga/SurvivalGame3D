@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6983152862365751847}
   - component: {fileID: 6922374013750708723}
+  - component: {fileID: 7685155179505932023}
   m_Layer: 10
   m_Name: Equip_Axe
   m_TagString: Untagged
@@ -31,7 +32,7 @@ Transform:
   m_Children:
   - {fileID: 6039926802550050433}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6922374013750708723
 MonoBehaviour:
@@ -45,23 +46,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdfdf72270fc741e48ee187a7569900a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRate: 0
-  attackDistance: 0
+  attackRate: 1
+  attackDistance: 1.4
   healthWeapon: 100
   healthWeaponMax: 100
-  doesGatherResources: 0
+  doesGatherResources: 1
   doesDealDamage: 0
-  damage: 0
+  damage: 9
   hitItem: 1
-  anim: {fileID: 0}
+  anim: {fileID: 7685155179505932023}
   cam: {fileID: 0}
   itemSlotUI: {fileID: 6843961481803960198, guid: a21d907d2d8324f619c9f4b31c561c79, type: 3}
+--- !u!95 &7685155179505932023
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6983152862365752024}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19b25aef6f2e94f3daa5a5709b7f5544, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &6077774893534292330
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 6983152862365751847}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 4894b14b7e3054b31bb943be4bbd65d2, type: 3}
@@ -125,9 +145,6 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4894b14b7e3054b31bb943be4bbd65d2, type: 3}
 --- !u!4 &6039926802550050433 stripped
 Transform:

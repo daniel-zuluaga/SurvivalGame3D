@@ -51,10 +51,15 @@ public class ItemSlotUI : MonoBehaviour
         }
     }
 
+    public void DesactiveBarHealth()
+    {
+        ImgBGItem.SetActive(false);
+    }
+
     public void Clear()
     {
         curSlot = null;
-        ImgBGItem.SetActive(false);
+        DesactiveBarHealth();
 
         icon.gameObject.SetActive(false);
         quantityText.text = string.Empty;
