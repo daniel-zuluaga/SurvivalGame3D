@@ -5,7 +5,7 @@ using UnityEngine;
 public class Resource : MonoBehaviour
 {
     public ItemData[] itemToGive;
-    public int quantityPerHit = 1;
+    public int quantityPerHit;
     public int capacity;
     public GameObject hitParticle;
 
@@ -13,15 +13,15 @@ public class Resource : MonoBehaviour
     {
         for (int i = 0; i < quantityPerHit; i++)
         {
-            capacity -= 1;
-
             if (capacity <= 0)
                 break;
 
-            Inventory.instance.AddItem(itemToGive[i]);
+            capacity -= 1;
+            int indexItem = Random.Range(0, itemToGive.Length);
+            Inventory.instance.AddItem(itemToGive[indexItem]);
         }
 
-        Instantiate(hitParticle, hitPoint, Quaternion.LookRotation(hitNormal, Vector3.up));
+        Destroy(Instantiate(hitParticle, hitPoint, Quaternion.LookRotation(hitNormal, Vector3.up)), 1f);
 
         if(capacity <= 0)
         {
