@@ -51,7 +51,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b2e04aad0e46c4b96927b9750a286a03, type: 2}
   - {fileID: 11400000, guid: 045688de7e9bb4e77a7ef68fec4b4be3, type: 2}
   quantityPerHit: 1
-  capacity: 3
+  capacity: 5
   hitParticle: {fileID: 3032275378631604388, guid: e936199a95e1d40f59f7fd95bf8934e2, type: 3}
 --- !u!136 &7679545226636160774
 CapsuleCollider:

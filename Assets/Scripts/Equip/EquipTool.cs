@@ -51,12 +51,6 @@ public class EquipTool : Equip
 
     public void OnHit()
     {
-        if (this == null)
-        {
-            Debug.Log("Este objeto es nulo");
-            return;
-        }
-
         if (healthWeapon == 0)
         {
             Destroy(gameObject);
@@ -64,10 +58,24 @@ public class EquipTool : Equip
             itemSlotUI.Clear();
             return;
         }
-        else
+        healthWeapon -= hitItem;
+        Debug.Log("Hit Detected");
+
+        Ray ray = cam.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2));
+
+        RaycastHit hit;
+
+        if(Physics.Raycast(ray, out hit, attackDistance))
         {
-            healthWeapon -= hitItem;
-            Debug.Log("Hit Detected");
+            if (doesGatherResources && hit.collider.GetComponent<Resource>())
+            {
+                hit.collider.GetComponent<Resource>().Gather(hit.point, hit.normal);
+            }
+
+            if(doesDealDamage && hit.collider.GetComponent<IDamagable>() != null)
+            {
+                hit.collider.GetComponent<IDamagable>().TakePhysicalDamage(damage);
+            }
         }
     }
 }
