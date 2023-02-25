@@ -18,7 +18,7 @@ public class Resource : MonoBehaviour
 
             capacity -= 1;
             int indexItem = Random.Range(0, itemToGive.Length);
-            Inventory.instance.AddItem(itemToGive[indexItem]);
+            Inventory.instanceInventory.AddItem(itemToGive[indexItem]);
         }
 
         Destroy(Instantiate(hitParticle, hitPoint, Quaternion.LookRotation(hitNormal, Vector3.up)), 1f);

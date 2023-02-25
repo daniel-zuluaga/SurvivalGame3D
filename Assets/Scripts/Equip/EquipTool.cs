@@ -54,7 +54,7 @@ public class EquipTool : Equip
         if (healthWeapon == 0)
         {
             Destroy(gameObject);
-            Inventory.instance.RemoveSelectedItem();
+            Inventory.instanceInventory.RemoveSelectedItem();
             itemSlotUI.Clear();
             return;
         }

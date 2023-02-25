@@ -6,7 +6,7 @@ using UnityEngine;
 public class CraftingRecipes : ScriptableObject
 {
     public ItemData itemToCraft;
-    public ResourceCost[] cost;
+    public ResourceCost[] costRecipes;
 }
 
 [System.Serializable]

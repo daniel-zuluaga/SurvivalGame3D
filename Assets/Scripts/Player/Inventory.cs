@@ -39,11 +39,11 @@ public class Inventory : MonoBehaviour
     public UnityEvent onCloseInventory;
 
     // singleton
-    public static Inventory instance;
+    public static Inventory instanceInventory;
 
     private void Awake()
     {
-        instance = this;
+        instanceInventory = this;
     }
 
     private void Start()
