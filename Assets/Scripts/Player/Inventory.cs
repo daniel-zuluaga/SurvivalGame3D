@@ -74,7 +74,7 @@ public class Inventory : MonoBehaviour
     {
         if (inventoryWindow.activeInHierarchy)
         {
-            DesactiveInventory();
+            DesactiveWindow();
         }
         else
         {
@@ -85,7 +85,7 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public void DesactiveInventory()
+    public void DesactiveWindow()
     {
         inventoryWindow.SetActive(false);
         onCloseInventory.Invoke();
@@ -300,11 +300,42 @@ public class Inventory : MonoBehaviour
 
     public void RemoveItem(ItemData item)
     {
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (slots[i].item == item)
+            {
+                slots[i].quantity--;
 
+                if (slots[i].quantity == 0)
+                {
+                    if (uiSlots[i].equipped == true)
+                    {
+                        UnEquip(i);
+                    }
+
+                    slots[i].item = null;
+                    ClearSelectedItemWindow();
+                }
+
+                UpdateUI();
+                return;
+            }
+        }
     }
 
     public bool HasItems(ItemData item, int quantity)
     {
+        int amount = 0;
+
+        for (int x = 0; x < slots.Length; x++)
+        {
+            if (slots[x].item == item)
+            {
+                amount += slots[x].quantity;
+            }
+            if (amount >= quantity)
+                return true;
+        }
         return false;
     }
 }

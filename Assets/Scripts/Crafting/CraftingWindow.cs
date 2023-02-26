@@ -13,6 +13,11 @@ public class CraftingWindow : MonoBehaviour
         instanceCraftingWindow = this;
     }
 
+    private void Start()
+    {
+        gameObject.SetActive(false);
+    }
+
     private void OnEnable()
     {
         Inventory.instanceInventory.onOpenInventory.AddListener(OnOpenInventory);
@@ -23,7 +28,7 @@ public class CraftingWindow : MonoBehaviour
         Inventory.instanceInventory.onOpenInventory.RemoveListener(OnOpenInventory);
     }
 
-    private void OnOpenInventory()
+    public void OnOpenInventory()
     {
         gameObject.SetActive(false);
     }
