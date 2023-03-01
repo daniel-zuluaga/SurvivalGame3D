@@ -74,7 +74,7 @@ public class Inventory : MonoBehaviour
     {
         if (inventoryWindow.activeInHierarchy)
         {
-            DesactiveWindow();
+            DesactiveWindow(inventoryWindow);
         }
         else
         {
@@ -85,9 +85,9 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public void DesactiveWindow()
+    public void DesactiveWindow(GameObject gameObjectWindow)
     {
-        inventoryWindow.SetActive(false);
+        gameObjectWindow.SetActive(false);
         onCloseInventory.Invoke();
         controller.ToggleCursor(false);
     }

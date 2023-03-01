@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dbd75d8488c746149574469704e38ab, type: 3}
+  m_Name: Door
+  m_EditorClassIdentifier: 
+  displayName: Door
+  icon: {fileID: 0}
+  spawnPrefab: {fileID: 673710392514860083, guid: 3eb6fda045db04897a74208277a2bfbd, type: 3}
+  previewPrefab: {fileID: 2842687320286937752, guid: 0882acfe2a1044888a9d7bc5b84a4c97, type: 3}
+  resourceCosts:
+  - item: {fileID: 11400000, guid: b2e04aad0e46c4b96927b9750a286a03, type: 2}
+    quantity: 4
+  - item: {fileID: 11400000, guid: 0dae45f0df5be405c8d756eeba1ff1f9, type: 2}
+    quantity: 1

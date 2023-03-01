@@ -33,6 +33,11 @@ public class CraftingWindow : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    public void OnDisableWindow()
+    {
+        Inventory.instanceInventory.DesactiveWindow(gameObject);
+    }
+
     public void Craft(CraftingRecipes craftingRecipes)
     {
         for (int i = 0; i < craftingRecipes.costRecipes.Length; i++)

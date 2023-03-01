@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 456749545943249981}
   - component: {fileID: 456749545943249980}
   m_Layer: 0
-  m_Name: Wall
+  m_Name: Buildings_wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,7 +45,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.4962945, y: 2.4979029, z: 0.095537335}
-  m_Center: {x: -0.0068297386, y: 0.0040860176, z: -0.000000044703484}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &456749546220385304
 GameObject:
   m_ObjectHideFlags: 0
