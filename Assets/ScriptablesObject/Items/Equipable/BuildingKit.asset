@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameItem: Building Kit
   descriptionItem: This object helps display a template for the build.
-  typeItem: 0
+  typeItem: 1
   iconItem: {fileID: 21300000, guid: f250ffd64543548dc89deb348b9f05e6, type: 3}
   prefabItem: {fileID: 2679144568588272150, guid: 24d4c462c9f074edea2f68647b9bfc42, type: 3}
   canStack: 0
   maxStackAmount: 0
   consumables: []
+  equipPrefab: {fileID: 617502888495761809, guid: 7a3a1bccda53546ea8fbeeeb3c471ce7, type: 3}

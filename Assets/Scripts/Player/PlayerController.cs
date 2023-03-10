@@ -28,6 +28,13 @@ public class PlayerController : MonoBehaviour
     [Header("Components")]
     public Rigidbody rb;
 
+    public static PlayerController instancePlayerController;
+
+    private void Awake()
+    {
+        instancePlayerController = this;
+    }
+
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;

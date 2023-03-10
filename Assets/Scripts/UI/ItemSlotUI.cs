@@ -11,7 +11,6 @@ public class ItemSlotUI : MonoBehaviour
     public TextMeshProUGUI quantityText;
     private ItemSlot curSlot;
     public Outline outline;
-    public GameObject selectedItemData;
     public GameObject ImgBGItem;
     public Image fillHealthItem;
 

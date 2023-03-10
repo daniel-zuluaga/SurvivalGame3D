@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Wall
   m_EditorClassIdentifier: 
   displayName: Wall
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 9a4848fe952c34c20be2216e606ee093, type: 3}
   spawnPrefab: {fileID: 456749545943249978, guid: 465d878fabdeb49f1a61842edebb9217, type: 3}
   previewPrefab: {fileID: 2124412508429459896, guid: f4bd7d49cf69a42bfaf12178f3875d57, type: 3}
   resourceCosts:
