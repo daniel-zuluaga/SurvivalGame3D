@@ -21,6 +21,11 @@ public class BuildingRecipeUI : MonoBehaviour
         UpdateCanCraft();
     }
 
+    private void Update()
+    {
+        UpdateCanCraft();
+    }
+
     private void Start()
     {
         UpdateDataBuilding();
@@ -48,14 +53,14 @@ public class BuildingRecipeUI : MonoBehaviour
         }
     }
 
-    void UpdateCanCraft() 
+    void UpdateCanCraft()
     {
         canBuild = true;
 
         for (int x = 0; x < recipeBuilding.resourceCosts.Length; x++)
         {
             var hasItemsBuilding = Inventory.instanceInventory.HasItems(recipeBuilding.resourceCosts[x].item, recipeBuilding.resourceCosts[x].quantity);
-            if(!hasItemsBuilding)
+            if (!hasItemsBuilding)
             {
                 canBuild = false;
                 break;
@@ -63,5 +68,18 @@ public class BuildingRecipeUI : MonoBehaviour
         }
 
         backgroundImage.color = canBuild ? canBuildColor : cannotBuildColor;
+    }
+
+    public void OnClickButton()
+    {
+        if (canBuild)
+        {
+            EquipBuildingKit.instanceBuildingKit.SetNewBuildingRecipe(recipeBuilding);
+        }
+        else
+        {
+            PlayerController.instancePlayerController.ToggleCursor(true);
+            gameObject.SetActive(false);
+        }
     }
 }
